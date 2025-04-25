@@ -1,24 +1,13 @@
-.highlight {
-    background: yellow
+body{
+    background-color: #525252;
 }
-.highlight.bold.red {
-    background: yellow;
-    color: red; 
+
+.container{
+    margin-top: 60px;
+}
+
+.txt{
+    color: #FFF;
     font-weight: bold;
-}
-h1 {
-    font-size: 25px;
-    text-decoration: underline;
-}
-p {
     font-size: 18px;
-    padding: 10px;
-    margin: 5px auto;
-    /* width: 60%; */
-    display: inline-block;
-}
-.highlight.italic.white {
-    background: black;
-    color: white;
-    font-style: italic;
 }

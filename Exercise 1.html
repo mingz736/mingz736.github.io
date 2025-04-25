@@ -3,17 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Exercise 1.css">
 </head>
-<body>
-    <h1>Here Is Customize Tag</h1>
-    <p class="highlight">The first paragraph</p> <br>
-    <p class="highlight bold red">The second paragraph</p><br>
-    <p class="highlight italic white">The third paragraph</p><br>
-    <p class="highlight">The fourth paragraph</p><br>
-    <p class="highlight bold red">The fifth paragraph</p><br>
-    <p class="highlight bold red">The seventh paragraph</p><br>
-    <p class="highlight">The seventh paragraph</p><br>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg" style="width: 400px;">
+            <div class="card-header bg-secondary text-white text-center">
+                <h4>User Registration</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">First name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Last name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Input password">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Confirmation</label>
+                        <input type="password" class="form-control" placeholder="Input confirm">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
