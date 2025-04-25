@@ -1,45 +1,91 @@
 body {
-    background-color: whitesmoke;
-    margin: 0;
+    background: linear-gradient(to bottom right, #e0f7ff, #ffffff);
+    font-family: Arial, sans-serif;
+}
+
+.cv-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cv-container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 123, 191, 0.1);
+    border-radius: 50%;
+}
+
+.cv-container::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 123, 191, 0.2);
+    border-radius: 50%;
+}
+
+img {
+    border: 5px solid #86c5da;
+    padding: 5px;
+    background: #ffffff;
+}
+
+h2, h3 {
+    color: #007bbf;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.personal-info {
+    background: rgba(204, 231, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul {
-    background-color: white ;
-    margin: 0;
-    padding: 0;
+.personal-info li {
+    padding: 8px 0;
+    color: #005a99;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #007bbf;
+    padding: 8px;
     text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    padding: 20px;
-    font-size: 20px;
-    line-height: 50px;
-}
-header h1{
-   text-align: center;
-}
-article header p{ font-style: italic;}
-main{padding-left: 20px;}
-
-.my-list img {
-    width: 210px; 
-    height: 230px; 
-    border-image-source: 50%;
-    display: block;
-
-}
-main article {
-    background: palegoldenrod;
-    margin: 10px;
-    padding: 5px;
-    
-}
-nav a {
-    text-decoration: none;
-    color: #000000;
+.skills-table th {
+    background: #007bbf;
+    color: white;
 }
 
+.skills-table td {
+    background: #e0f7ff;
+    color: #003f7f;
+}
 
-.Profile{display: flex;justify-content: flex-end;}
+ul li:hover, .skills-table td:hover {
+    background: #99d0ff;
+    transition: 0.3s;
+}
